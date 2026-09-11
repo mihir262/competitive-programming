@@ -18,16 +18,15 @@ int main(){
 
 	int t; cin >> t;
 	while(t--){
-		int x, y; cin >> x >> y;
-        int mx = x + y;
+		int n, m;
+        cin >> n >> m;
+        vi a(n), b(m);
+        for(int i = 0; i < n; i++) cin >> a[i];
+        for(int j = 0; j < m; j++) cin >> b[j];
         
-        int fx = 0;
-        for(int bit = 30; bit >= 0; bit--){
-            if(mx&(1 << bit) && (fx + (1<<bit))<= x){
-                fx += (1 << bit);
-            }
-        }
-        cout << mx << " " << x - fx << endl;
-    }
+        int bea = a[0] + n - 1, ver = b[0] + m - 1;
+        
+        cout << ((bea >= ver) ? 1 : 2) << endl;
+	}
 	return 0;
 }

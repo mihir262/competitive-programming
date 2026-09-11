@@ -18,16 +18,7 @@ int main(){
 
 	int t; cin >> t;
 	while(t--){
-		int x, y; cin >> x >> y;
-        int mx = x + y;
-        
-        int fx = 0;
-        for(int bit = 30; bit >= 0; bit--){
-            if(mx&(1 << bit) && (fx + (1<<bit))<= x){
-                fx += (1 << bit);
-            }
-        }
-        cout << mx << " " << x - fx << endl;
-    }
+		
+	}
 	return 0;
 }
