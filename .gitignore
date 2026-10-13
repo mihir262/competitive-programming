@@ -1,0 +1,12 @@
+# Test-case text files
+*.txt
+
+# Compiled executables 
+*.out
+*.exe
+*.o
+
+# Extensionless binaries from `g++ x.cpp -o x` (a, b, c, c1, ...)
+[a-zA-Z]
+[a-zA-Z][0-9]
+[a-zA-Z][0-9][0-9]
